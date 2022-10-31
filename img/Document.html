@@ -1,0 +1,106 @@
+
+<!-- saved from url=(0040)http://localhost:8888/Ass_GD2/create.php -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body>Table students created successfully
+
+
+
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 420px;
+            margin: 0 auto;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        #add_students {
+            box-shadow: 0px 0px 10px 5px rgb(0, 0, 0 ,0.1);
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        h2 {
+            margin: 10px;
+        }
+
+        .title {
+            text-align: center;
+        }
+
+        .form_div {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .form_div input {
+            width: 265px;
+            height: 30px;
+        }
+
+        .form_btn {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .form_btn input {
+            width: 60px;
+            border: 1px solid #ccc;
+            height: 25px;
+            border-radius: 5px;
+        }
+
+        .form_btn .save {
+            background-color: #0090c7;
+            border: 1px solid #0090c7;
+            color: white;
+        }
+        
+    </style>
+
+
+    <div id="add_students">
+        <div class="title">
+            <h2>Thêm mới sinh viên</h2>
+            <a class="link" href="http://localhost:8888/Ass_GD2/index.php">Về trang danh sách</a>
+        </div>
+        
+        <form action="http://localhost:8888/Ass_GD2/create.php" method="POST" enctype="multipart/form-data">
+            <div class="form_div">
+                <label>Họ tên</label>
+                <input type="text" value="" name="name">
+                
+            </div>
+
+            <br>           
+            <div class="form_div">
+                <label>Tuổi</label>
+                <input type="number" value="" name="age">
+                
+            </div>
+
+            <br>            
+
+            <div class="form_div">
+                <label>Ảnh đại diện</label>
+                <input type="file" name="file_upload">
+            </div>
+                        
+
+            <div class="form_div">
+                <label>Mô tả sinh viên</label>
+                <textarea name="description" id="" cols="30" rows="5"></textarea>
+            </div>
+            
+
+            <div class="form_btn">
+                <input class="save" type="submit" name="btn_save" value="Save">
+                <input type="submit" name="btn_reset" value="Reset">
+            </div>
+            
+        </form>
+    </div>
+
+</body></html>
